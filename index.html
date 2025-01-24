@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullahi Ahmad- Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/tesme.png"
+              alt="Abdullahi Ahmad"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Abdullahi Ahmad">Abdullahi Ahmad</h1>
+
+            <p class="title">Machine Learning Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:abdulll8392@gmail.com" class="contact-link"
+                  >abdulll8392@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+2348067718392" class="contact-link"
+                  >+234 (806) 771-8392</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">May 08, 1999</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Babura, Jigawa State, NIGERIA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://wa.me/2348067718392"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://github.com/abdull6771"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/abdullahi-ahmad-babura-57653b205"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/abdullbbr/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Greetings! I'm Abdullahi Ahmad, a dedicated and passionate AI
+              enthusiast and software developer with a robust background in
+              Artificial Intelligence, and Object-Oriented Programming (OOP).
+              With over four years of experience in Machine Learning and
+              Generative AI, I am deeply committed to leveraging cutting-edge
+              technologies to build future-ready solutions. Fueled by an
+              insatiable curiosity for exploring the architecture of Large
+              Language Models (LLMs) and developing Retrieval-Augmented
+              Generation (RAG) applications using tools like LangChain, I
+              continuously seek opportunities to grow and make an impact. My
+              proactive approach to problem-solving, coupled with a solid
+              foundation in AI and software development, positions me to
+              contribute innovative and forward-thinking solutions to projects
+              that require creativity and technical expertise. Join me on this
+              exciting journey of exploration and innovation as we shape the
+              future of technology together!
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">My top skills</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/ml.png
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                  <p class="service-item-text">
+                    Skilled in Machine Learning, ensuring robust and scalable
+                    Model development.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/dl.png"
+                    alt="Deep Learning"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Deep Learning</h4>
+
+                  <p class="service-item-text">
+                    High-Quality Building and Deployment of Deep Learning
+                    Models.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/cv.jpg"
+                    alt="Computer Vision icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Computer Vision</h4>
+
+                  <p class="service-item-text">
+                    Versatile Computer Vision Developer adept at end-to-end
+                    application development and deploying innovative computer
+                    vision solutions.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/py.png"
+                    alt="python icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Python development</h4>
+
+                  <p class="service-item-text">
+                    Experienced in Python development, crafting efficient and
+                    scalable software solutions.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <!-- <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div> -->
+            </section>
+          </div>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor of Engineering (B.Eng)
+                </h4>
+
+                <span>2018 — 2024</span>
+
+                <p class="timeline-text">
+                  -Ahmadu Bello University, Zaria
+                  <br />
+                  -Computer Engineering
+                  <br />
+                  - Second Class Upper
+                  <br />
+                  - Supervisor: Prof. Muhammad Bashir Muazu
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Diploma</h4>
+
+                <span>2016 — 2018</span>
+
+                <p class="timeline-text">
+                  -Institute of Computing and Information Communication
+                  Technology Ahmadu Bello University, Zaria
+                  <br />
+                  -Computer Engineering
+                  <br />
+                  -Upper Credit
+                  <br />
+                  -Supervisor: Mal. Nura Dari
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">High schools</h4>
+
+                <span>2016 — 2018</span>
+
+                <p class="timeline-text">
+                  - Science Secondary School Lautai Gumel Jigawa State
+                  <br />
+                  -West African Secondary School Certificate (W.A.S.S.C.E)
+                  <br />
+                  -Science
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="school-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">MINOR EDUCATION</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        ASOM AI Machine Learning Summer School (Online)
+      </h4>
+      <h5 class="h5 timeline-item-title">Saudi Arabia</h5>
+      <span>May 2023</span>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Master Class on Artificial Intelligence (Online)
+      </h4>
+      <h5 class="h5 timeline-item-title">Pantech Solution, India</h5>
+      <span>Aug 2022</span>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Deep Learning Specialisation by Prof. Andrew Ng (Online)
+      </h4>
+      <h5 class="h5 timeline-item-title">Coursera</h5>
+      <span>Jul 2018</span>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Machine Learning and Data Science A-Z Hands-on Python (Online)
+      </h4>
+      <h5 class="h5 timeline-item-title">Udemy</h5>
+      <span>Jul 2018</span>
+    </li>
+  </ol>
+</section>
+
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="ribbon-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">CERTIFICATIONS</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Huawei Certified ICT Professional - Artificial Intelligence
+      </h4>
+      <p class="timeline-text">
+        Recognized for expertise in advanced AI concepts and solutions.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Huawei Certified ICT Associate - Artificial Intelligence
+      </h4>
+      <p class="timeline-text">
+        Validated foundational knowledge and skills in Artificial Intelligence.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Huawei Certified ICT Associate - Cloud Services
+      </h4>
+      <p class="timeline-text">
+        Demonstrated knowledge in cloud computing principles and services.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Coursera TensorFlow Developer Certificate
+      </h4>
+      <p class="timeline-text">
+        Certification in building and deploying scalable machine learning models using TensorFlow.
+      </p>
+    </li>
+  </ol>
+</section>
+
+
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  <h4 class="h4 timeline-item-title">
+                    Machine Engineer Intern
+                  </h4>
+                  <h5 class="h5 timeline-item-title">Nafabat.AI</h5>
+
+                  <span>Jan, 2023 — Sept, 2023</span>
+
+                  <p class="timeline-text">
+                    • Assisted in the development and deployment of machine
+                    learning models.
+                    <br />
+                    • Conducted data preprocessing and feature engineering for
+                    various projects.
+                    <br />
+                    • Collaborated with senior engineers to optimize model
+                    performance.
+                  </p>
+                </h4>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Machine Engineer</h4>
+                <h5 class="h5 timeline-item-title">Nafabat.AI</h5>
+
+                <span>Sept, 2023 — Date</span>
+
+                <p class="timeline-text">
+                  • Finetuned a large video dataset using LlamaVID to recognize
+                  shoplifting using CCTV Camera.
+                  <br />
+                  • Developed a RAG application to query influxdb data
+                  <br />
+                  • Developed an End to End Retrieval Augmented Generation
+                  Application and Deployed using Gradio.
+                </p>
+              </li>
+
+              <!-- <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web developer intern</h4>
+                <h5 class="h5 timeline-item-title">Oasis Infobyte</h5>
+
+                <span>Jun, 2023 — Jul, 2023</span>
+
+                <p class="timeline-text">
+                  • Contributed to real-life HTML/CSS/JS projects.
+                  <br />
+                  • Designed a practical "Banking Management System" web app,
+                  enabling CRUD operations on bank data.
+                </p>
+              </li> -->
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">PUBLICATIONS</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  <h4 class="h4 timeline-item-title">
+                    Department of Computer Engineering, Ahmadu Bello University, Nigeria.
+                  </h4>
+                  <h5 class="h5 timeline-item-title">Poster Presentation</h5>
+
+                  <span>Nov, 2023</span>
+
+                  <p class="timeline-text">
+                    • Abdullahi, A. 2024. An Artificial Intelligence Smart Waste Robot.
+                  </p>
+                </h4>
+              </li>
+
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="trophy-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">AWARDS & ACCOLADES</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Huawei ICT Competition, Global Finals, Shenzhen, China
+      </h4>
+      <h5 class="h5 timeline-item-title">Global Winner</h5>
+      <span>2023</span>
+      <p class="timeline-text">
+        • Won the Global Huawei ICT Competition for outstanding performance in Artificial Intelligence and innovation categories.
+      </p>
+    </li>
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Huawei ICT Competition, Southern Africa Regional Finals
+      </h4>
+      <h5 class="h5 timeline-item-title">Regional Winner</h5>
+      <span>2023</span>
+      <p class="timeline-text">
+        • Secured first place in the Southern Africa Regional Huawei ICT Competition.
+      </p>
+    </li>
+    
+  </ol>
+          </section>
+          <section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="people-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">VOLUNTEERING</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        National Association of Jigawa State Students ICT Bootcamp
+      </h4>
+      <h5 class="h5 timeline-item-title">ICT Instructor</h5>
+      <span>Feb. 2024</span>
+      <p class="timeline-text">
+        • Led workshops on ICT fundamentals, fostering skills in students.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Ahmadu Bello University
+      </h4>
+      <h5 class="h5 timeline-item-title">Tutor - ML Fundamentals and Optimization (CCOEN417, COEN505)</h5>
+      <span>Feb. 2024</span>
+      <p class="timeline-text">
+        • Tutored students in Machine Learning fundamentals and optimization techniques, enhancing their academic performance in Computer Engineering.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Computer Engineering, Ahmadu Bello University
+      </h4>
+      <h5 class="h5 timeline-item-title">Instructor - Python Bootcamp for Kids</h5>
+      <span>Dec. 2019</span>
+      <p class="timeline-text">
+        • Conducted a Python bootcamp for young learners, introducing them to programming concepts in a fun and interactive manner.
+      </p>
+    </li>
+  </ol>
+</section>
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="mic-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">TALKS</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Nigeria Computer Society AI Summit
+      </h4>
+      <h5 class="h5 timeline-item-title">Project Presentation: AI Assistive Glass for Visually Impaired</h5>
+      <span> Jan, 2024</span>
+      <p class="timeline-text">
+        • Presented a project on an AI-based assistive device designed to help visually impaired individuals navigate their surroundings more effectively.
+      </p>
+    </li>
+  </ol>
+</section>
+
+
+          
+          <section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="people-circle-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">LEADERSHIP AND COMMUNITY INVOLVEMENT</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Organized Workshops on AI Technologies
+      </h4>
+      <h5 class="h5 timeline-item-title">
+        Youth Empowerment in Babura LGA
+      </h5>
+      <p class="timeline-text">
+        • Conducted workshops to educate and empower youth on Artificial Intelligence technologies and their applications.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Mentorship in AI and Robotics
+      </h4>
+      <h5 class="h5 timeline-item-title">
+        Guiding Aspiring Engineers
+      </h5>
+      <p class="timeline-text">
+        • Mentored young engineers to build innovative projects using AI and robotics technologies.
+      </p>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Knowledge Sharing on Langchain and Generative AI
+      </h4>
+      <h5 class="h5 timeline-item-title">
+        Local and Global Communities
+      </h5>
+      <p class="timeline-text">
+        • Actively shared expertise on Langchain and Generative AI applications to educate and inspire both local and global audiences.
+      </p>
+    </li>
+  </ol>
+</section>
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="people-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3">REFEREES</h3>
+  </div>
+
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Muhammad Bashir Muazu
+      </h4>
+      <h5 class="h5 timeline-item-title">
+        Professor, Department of Computer Engineering, Ahmadu Bello University, Zaria
+      </h5>
+      <span>Email: <a href="mailto:mbmuazu@abu.edu.ng">mbmuazu@abu.edu.ng</a></span>
+    </li>
+
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">
+        Bashir Muhammad
+      </h4>
+      <h5 class="h5 timeline-item-title">
+        Research Scientist, Office of CTO, Intel Corporation
+      </h5>
+      <span>Email: <a href="mailto:Bashir.mohammed@intel.com">Bashir.mohammed@intel.com</a></span>
+    </li>
+  </ol>
+          </section>
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box">
+      <ion-icon name="cloud-download-outline"></ion-icon>
+    </div>
+
+    <h3 class="h3"><a href="https://drive.google.com/file/d/YOUR_CV_FILE_ID/view?usp=sharing" 
+      target="_blank" 
+      class="btn btn-primary">DOWNLOAD MY COMPLETE CV</a></h3>
+  </div>
+
+  
+</section>
+
+
+
+          <section class="skill">
+            <h2 class="h2 article-title">Skills</h2>
+
+            <h3 class="h3 skills-title">Coding skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="80">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React</h5>
+                  <data value="35">35%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 35%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java Script</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- CSE fundamentals -->
+            <h3 class="h3 skills-title">Computer Engineering fundamentals</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Digital Logic and Microprocessors</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Computer Architecture</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Programming and Data Structures</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Embedded Systems</h5>
+                  <data value="55">55%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 55%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Networks and Communication Systems</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Tools & Techno -->
+          <section class="client">
+            <h3 class="h3 skills-title">Tools and Technologies</h3>
+
+            <ul class="skills-list content-card clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/tools/torch.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/tools/tensorflow.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/tools/cv.png" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/tools/rag.png" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/tools/graph.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/tools/linux.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/tools/sqlite.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/tools/gcp.png" alt="client logo" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/tools/vscode.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/tools/github.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>A.I. Application</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Apps</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>A.I. Application</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://github.com/ianshulx/Student-record-CRUD-application"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/projects/card2.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fake NIMC Card Detection</h3>
+
+                  <p class="project-category">A.I. Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/abdull6771/plate_number_detection">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/projects/plate.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Plate Number Detection App</h3>
+
+                  <p class="project-category">A.I. Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/abdull6771/Plant-Disease-Detection">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/projects/plant.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Plant Disease Detection</h3>
+
+                  <p class="project-category">A.I. Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://github.com/abdull6771/Heart-Disease-Classification-Model"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/projects/heart.jpg"
+                      alt="Heart-Disease-Classification-Model"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Heart Disease Prediction system</h3>
+
+                  <p class="project-category">A.I. Application</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://github.com/abdull6771/Mushroom-Classification-Webapp"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/projects/mushroom.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Mushroom Classification Webapp</h3>
+
+                  <p class="project-category">A.I. Application</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://github.com/abdull6771/Breast-Cancer-Wisconsin-Classification"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/projects/cancer.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Breast cancer Prediction Webapp</h3>
+
+                  <p class="project-category">A.I. Application</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="A.I. Application"
+              >
+                <a
+                  href="https://github.com/abdull6771/Titanic-Survival-Web-App-Using-Streamlit"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/projects/titanic.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Titanic Survival Prediction</h3>
+
+                  <p class="project-category">A.I. Application</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@abdulll8392/how-to-connect-llm-to-sql-database-with-llamaindex-b40291cb071d"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/sql.png"
+                      alt="LLM to SQL database with LlamaIndex"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">RAG</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-02-11">Feb 11, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      How to connect LLM to SQL database with LlamaIndex
+                    </h3>
+
+                    <p class="blog-text">
+                      Instead of wrangling complex SQL commands, Llama Index
+                      lets you ask questions like you normally would: “Show me
+                      all customers from California who placed an order last
+                      month.”
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@abdulll8392/chat-with-your-documents-retrieval-augmented-generation-using-llama-index-3d264fddbcb5"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/rag.png"
+                      alt="Retrieval-Augmented Generation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">RAG</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024-02-04"> Feb 4, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Chat With Your Documents — Retrieval-Augmented Generation
+                      Using Llama-Index
+                    </h3>
+
+                    <p class="blog-text">
+                      Retrieval Augmented Generation (RAG) is a natural language
+                      processing (NLP) model that combines elements of both
+                      retrieval and generation to improve language understanding
+                      and generation tasks.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@abdulll8392/from-dna-dataset-to-cloud-deployment-a-comprehensive-guide-277e965ed0ae"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/djangoml.jpg"
+                      alt="DNA Dataset to Cloud Deployment"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Machine Learning</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-11-11"> Nov 11, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      From DNA Dataset to Cloud Deployment: A Comprehensive
+                      Guide
+                    </h3>
+
+                    <p class="blog-text">
+                      Welcome to a step-by-step journey through the creation of
+                      a machine learning model, from downloading the dataset to
+                      deploying it on AWS. Follow along as we unravel the
+                      intricacies of genetic data and showcase the power of MLP
+                      Classifier in a Django web application.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@abdulll8392/mastering-openvino-inference-engine-a-comprehensive-workflow-265736980bde"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/vino.png"
+                      alt="OpenVINO Inference Engine"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Machine Learning</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-10-30"> Oct 30, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Mastering OpenVINO Inference Engine: A Comprehensive
+                      Workflow
+                    </h3>
+
+                    <p class="blog-text">
+                      In today’s fast-paced tech landscape, OpenVINO Inference
+                      Engine stands tall as a game-changer in accelerating deep
+                      learning workloads. Starting your OpenVINO journey is
+                      seamless. First, install the OpenVINO toolkit, empowering
+                      you with a diverse set of pre-trained models and tools.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@abdulll8392/plant-disease-detection-be036985a48e"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/plant.jpg"
+                      alt="Plant Disease Detection"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Machine Learning</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-10-30"> Oct 30, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Plant Disease Detection</h3>
+
+                    <p class="blog-text">
+                      In this project, I will develop a convolutional neural
+                      network capable of predicting whether a plant is suffering
+                      from a disease. I will employ various layers and adjust
+                      hyperparameters for constructing, training, and testing
+                      this classification model. TensorFlow and Keras will be
+                      the primary tools utilized for this endeavor.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <h3 class="h3 content-card" style="color: hsl(45, 100%, 71%)">
+                Soon to Release New.....
+              </h3>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <img
+                src="./assets/images/terra1.gif"
+                alt="Animation"
+                width="1152"
+                height="648"
+              />
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="https://formsubmit.co/abdulll8392@gmail.com"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button
+                class="form-btn"
+                type="submit"
+                value="send"
+                disabled
+                data-form-btn
+              >
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
